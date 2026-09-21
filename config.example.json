@@ -1,0 +1,17 @@
+{
+  "home_assistant_url": "http://homeassistant.local:8123",
+  "home_assistant_token": "PASTE_TOKEN_HERE",
+  "entities": {
+    "left": "light.led_muur",
+    "right": "light.lsc_moodlight",
+    "center": "light.main_gameroom"
+  },
+  "games": {
+    "WardogsClient-Win64-Shipping.exe": {"name": "Wardogs", "brightness": 0.85},
+    "DayZ_x64.exe": {"name": "DayZ", "brightness": 0.75}
+  },
+  "capture_fps": 5,
+  "minimum_color_change": 12,
+  "smoothing": 0.35,
+  "restore_lights_when_game_closes": true
+}
