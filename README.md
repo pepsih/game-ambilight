@@ -1,8 +1,8 @@
 # Universal Game Ambilight voor Home Assistant
 
-Supports Wardogs at 1920x1080, DayZ at 2560x1440, and future games through the `games` section in `config.json`. The program captures the primary monitor, analyzes left, right and center colors, and updates the three Home Assistant lights.
+Werkt met iedere game, film, video of desktop op de primaire monitor. Fullscreen en borderless worden ondersteund. Het programma controleert geen game-processen.
 
-Dit programma maakt van je primaire monitor een eenvoudige Ambilight voor Home Assistant. Het werkt met meerdere games. De lampen links, rechts en in het midden krijgen kleuren uit het beeld.
+Het programma leest alleen dunne randstroken van het beeld. Daardoor blijft de belasting laag en reageren de lampen snel.
 
 ## Vereisten
 
@@ -30,7 +30,9 @@ Voeg de exacte procesnaam toe onder `games`. Controleer die naam in PowerShell m
 tasklist | findstr /I "DayZ Wardogs"
 ```
 
-De voorbeeldconfiguratie bevat Wardogs en DayZ. Het programma start alleen kleurupdates wanneer een van deze processen actief is.
+De standaardinstelling leest 10 keer per seconde. Alleen duidelijke kleurverschillen sturen een update naar Home Assistant. Verlaag `capture_fps` naar 6 op een oudere pc.
+
+`left` krijgt de linker rand, `right` de rechter rand en `center` de bovenste middenrand.
 
 ## Veiligheid
 
