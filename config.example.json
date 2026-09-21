@@ -6,12 +6,8 @@
     "right": "light.lsc_moodlight",
     "center": "light.main_gameroom"
   },
-  "games": {
-    "WardogsClient-Win64-Shipping.exe": {"name": "Wardogs", "brightness": 0.85},
-    "DayZ_x64.exe": {"name": "DayZ", "brightness": 0.75}
-  },
-  "capture_fps": 5,
-  "minimum_color_change": 12,
-  "smoothing": 0.35,
-  "restore_lights_when_game_closes": true
+  "capture_fps": 10,
+  "edge_fraction": 0.06,
+  "minimum_color_change": 10,
+  "brightness": 0.80
 }
